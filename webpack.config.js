@@ -35,11 +35,12 @@ module.exports = (_, argv) => ({
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "header",
+      name: "host",
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
         "./Header": "./src/Header",
+        "./TestContext": "./src/testContext"
       },
       shared: require("./package.json").dependencies,
     }),

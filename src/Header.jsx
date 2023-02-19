@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
+import TestContext from "./testContext";
 
-export default () => (
-  <div
-    style={{
-      padding: "1em",
-      margin: "1em",
-      background: "green",
-      color: "white",
-      fontWeight: "bold",
-    }}
-  >
-    Header 2.0
-  </div>
-);
+export default () => {
+    const test = useContext(TestContext);
+    return (
+        <div
+            style={{
+                padding: "1em",
+                margin: "1em",
+                background: "green",
+                color: "white",
+                fontWeight: "bold",
+            }}
+        >
+            Header {test}
+        </div>
+    )
+};
