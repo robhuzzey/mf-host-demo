@@ -7,7 +7,7 @@ import Test from "./Test";
 
 const App = () => (
     <>
-        <Test />
+        <Test numberOfResults="10" />
     </>
 );
 
