@@ -1,5 +1,5 @@
 {
-  "name": "mfd host",
+  "name": "mfdhost",
   "version": "1.0.1",
   "scripts": {
     "build": "webpack --mode production",

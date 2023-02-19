@@ -40,7 +40,8 @@ module.exports = (_, argv) => ({
       remotes: {},
       exposes: {
         "./Header": "./src/Header",
-        "./TestContext": "./src/testContext"
+        "./TestContext": "./src/testContext",
+        './Test': "./src/Test"
       },
       shared: require("./package.json").dependencies,
     }),
