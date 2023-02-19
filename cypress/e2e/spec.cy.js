@@ -4,6 +4,6 @@ describe('spec.cy.js', () => {
     });
     it("should have the test file included", () => {
         cy.visit('/');
-        cy.get('.testComponent').contains('Number of results')
+        cy.get('.testComponent').contains('Result count')
     })
 });
