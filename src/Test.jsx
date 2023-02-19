@@ -1,6 +1,6 @@
 import React from 'react';
-export default () => (
+export default ({ numberOfResults }) => (
     <div style={{
         border: "3px dashed blue"
-    }}>This is a test component</div>
+    }}>Number of results: {numberOfResults}</div>
 );
